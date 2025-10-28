@@ -1,7 +1,7 @@
 # 🌐 Tarun Kumar — Personal Portfolio Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/portfolio)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/portfolio)
+![GitHub repo size](https://img.shields.io/github/repo-size/greeky-tarun/portfolio)
+![GitHub last commit](https://img.shields.io/github/last-commit/greeky-tarun/portfolio)
 ![GitHub license](https://img.shields.io/badge/license-MIT-yellow.svg)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-000000?style=for-the-badge&logo=vercel)](https://tarun-kumar-web.vercel.app/)
 
