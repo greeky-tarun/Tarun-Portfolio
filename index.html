@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280" />
+    <title>Tarun's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "nrQ5FkQXcHy20xpJr",
+        });
+      })();
+    </script>
+  </head>
+  <div id="mobile-warning">
+    <div class="rotate-icon">
+      <div class="phone-frame">
+        <div class="phone-screen"></div>
+      </div>
+      <div class="arrow"></div>
+    </div>
+    <p>
+      Please rotate your device or open this site on a laptop/desktop for the
+      best experience.
+    </p>
+  </div>
+  <script>
+    // Show message on small screens or portrait mode
+    function checkDevice() {
+      const warning = document.getElementById("mobile-warning");
+      if (window.innerWidth < 1024 || window.innerHeight > window.innerWidth) {
+        document.body.style.overflow = "hidden";
+        warning.style.display = "flex";
+      } else {
+        document.body.style.overflow = "auto";
+        warning.style.display = "none";
+      }
+    }
+
+    window.addEventListener("load", checkDevice);
+    window.addEventListener("resize", checkDevice);
+  </script>
+
+  <div id="notification" class="notification"></div>
+  <body>
+    <div class="landing">
+      <h1 class="logo-header">
+        <span class="logo">_</span>
+        <span class="logo">></span>
+        <span class="logo">B</span>
+        <span class="logo">T</span>
+        <span class="logo">K</span>
+      </h1>
+    </div>
+    <div id="progress-bar"></div>
+    <header>
+      <div class="navbar">
+        <div id="logo">
+          <p>_>BTK</p>
+        </div>
+        <div id="pages">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+          </ul>
+        </div>
+        <div id="contact">
+          <a href="#contactme"><p>Let's Talk</p></a>
+        </div>
+      </div>
+    </header>
+
+    <section id="Home" class="hidden">
+      <div id="left-home">
+        <div id="left-index">
+          <p id="hey">Ciao, I'm <i> B Tarun Kumar</i></p>
+          <div class="text-changer">
+            <p class="intro-txt">a</p>
+            <div class="roles-container">
+              <span class="role">UI Designer</span>
+              <span class="role">Front-End Developer</span>
+              <span class="role">Java Developer</span>
+              <span class="role">Chess Player</span>
+            </div>
+          </div>
+          <p id="left-intro">
+            I thrive on turning ideas into reality, blending design with
+            functionality to create intuitive, user-centric experiences. With a
+            deep love for technology, I’m constantly exploring innovative ways
+            to push boundaries and craft seamless, impactful solutions that
+            connect people with the digital world. Every project is an
+            opportunity to learn, grow, and make a meaningful impact.
+          </p>
+          <div class="social-container">
+            <div class="social">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/b-tarun-kumar-3b1b20250/"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-linkedin-in hidden"
+                      aria-hidden="true"
+                    ></i>
+                    <span>- LinkedIn</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/greeky-tarun" target="_blank">
+                    <i
+                      class="fa-brands fa-github hidden"
+                      aria-hidden="true"
+                    ></i>
+                    <span>- GitHub</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://x.com/01tarun_kumar" target="_blank">
+                    <i
+                      class="fa-brands fa-twitter hidden"
+                      aria-hidden="true"
+                    ></i>
+                    <span>- Twitter</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/01_tarun_kumar/"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-instagram hidden"
+                      aria-hidden="true"
+                    ></i>
+                    <span>- Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right-home">
+        <div id="image-box">
+          <img src="./assets/images/about1.png" alt="profile-photo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="About">
+      <div class="marque">
+        <div class="marquee-text">About Me</div>
+      </div>
+      <div class="about-box">
+        <div id="about-left">
+          <img src="./assets/images/profile4.png" alt="about profile" />
+          <blockquote>
+            "Building solutions that make an impact, solving problems with code,
+            and constantly learning to create the future today."
+          </blockquote>
+          <button id="download">
+            <a
+              href="https://drive.google.com/file/d/1eBCHmdL9kiTw7k7GXkLyKRwxFDygHjcv/view?usp=sharing"
+              target="_blank"
+              >View CV</a
+            >
+          </button>
+        </div>
+        <div id="about-right">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line">&gt; who am i</p>
+            <p class="terminal-line">B Tarun Kumar</p>
+            <p class="terminal-line">&gt; role</p>
+            <p class="terminal-line">Front-End & Java Developer</p>
+            <p class="terminal-line">&gt; passion</p>
+            <p class="terminal-line">
+              UI Design • Real-Time Collaboration • Chess
+            </p>
+            <p class="terminal-line">&gt; hobbies</p>
+            <p class="terminal-line">Coding • Traveling • Music</p>
+            <p class="terminal-line">&gt; favorite editor</p>
+            <p class="terminal-line">IntelliJ Idea</p>
+            <p class="cursor">_</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Skills">
+      <div class="skills-line">skills</div>
+      <div class="skill-container">
+        <div class="main-circle">
+          <div class="center-circle">Tools <br />& <br />Tech</div>
+          <div class="quadrant top-left">
+            <span>Frontend</span>
+            <div class="glass-container" id="Front-end">
+              <div id="icon-glass">
+                <img src="./assets/html.png" alt="HTML" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/css.png" alt="CSS" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/Javascript.png" alt="Javascript" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/tailwind.png" alt="Tailwind" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/react.png" alt="React" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/Bootstrap.png" alt="Bootstrap" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/kotlin.png" alt="Kotlin" />
+              </div>
+            </div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+          </div>
+          <div class="quadrant top-right">
+            <span>Backend</span>
+            <div class="glass-container" id="Back-end">
+              <div id="icon-glass">
+                <img src="./assets/nodejs.png" alt="NodeJS" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/java.png" alt="JAVA" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/springboot.png" alt="springboot" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/python.png" alt="Python" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/php.png" alt="PHP" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/git.png" alt="Git" />
+              </div>
+            </div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+          </div>
+          <div class="quadrant bottom-left">
+            <span>Database <br />& <br />OS</span>
+            <div class="glass-container" id="Dataandopr">
+              <div id="icon-glass">
+                <img src="./assets/MongoDB.png" alt="MongoDB" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/mysql.png" alt="MySQL" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/postgre.png" alt="Postgre SQL" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/windows.png" alt="Windows" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/linux.png" alt="Linux" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/ubantu.png" alt="Ubantu" />
+              </div>
+            </div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+          </div>
+          <div class="quadrant bottom-right">
+            <span>Editors</span>
+            <div class="glass-container" id="Editors">
+              <div id="icon-glass">
+                <img src="./assets/jetbrains.png" alt="JetBrains" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/Intellij.png" alt="IntelliJ" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/eclipse.png" alt="Eclipse" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/VScode.png" alt="VScode" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/Andriod.png" alt="Andriod Studio" />
+              </div>
+              <div id="icon-glass">
+                <img src="./assets/github.png" alt="Github" />
+              </div>
+            </div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Projects">
+      <div class="project-header">
+        <h2>My Projects</h2>
+      </div>
+      <div class="project-container">
+        <a
+          href="https://github.com/greeky-tarun/CodeTogether"
+          class="project pro"
+          target="_blank"
+        >
+          <img src="./assets/project-1.png" alt="project-1" />
+          <h3 id="project-title">Code Together</h3>
+          <p>
+            CodeTogether is a web-based platform for real-time collaborative
+            coding. It supports multiple programming languages, offering
+            role-based access, live editing, and seamless communication tools.
+            Ideal for remote teams and learners, it enhances productivity,
+            promotes teamwork, and breaks geographical barriers, making
+            collaborative coding more efficient and secure.
+          </p>
+        </a>
+
+        <a
+          href="https://drive.google.com/file/d/1XTBT2zdcOBJoL5nOX5cuIGympmZuQ177/view?usp=sharing"
+          class="project pro"
+          target="_blank"
+        >
+          <img src="./assets/project-2.png" alt="project-2" />
+          <h3 id="project-title">Smart Connect Grievance Portal</h3>
+          <p>
+            The Smart Connect Grievance Portal streamlines complaint submission,
+            tracking, and resolution. Integrated with scheduling systems, it
+            ensures transparency, accountability, and efficient conflict
+            resolution, enhancing communication and fostering a positive,
+            collaborative learning environment.
+          </p>
+        </a>
+
+        <a
+          href="https://countmycrunch.netlify.app/"
+          class="project pro"
+          target="_blank"
+        >
+          <img src="./assets/project-3.png" alt="project-3" />
+          <h3 id="project-title">Count My Crunch</h3>
+          <p>
+            Count My Crunch is an interactive website designed for users to
+            track and count various items. It offers a simple, engaging
+            interface to help users monitor quantities, whether it's for
+            personal goals, tasks, or activities. The website provides a
+            convenient and easy-to-use platform for daily tracking needs.
+          </p>
+        </a>
+      </div>
+    </section>
+    <section id="certificates">
+      <h2 class="certificate-title">Certificates</h2>
+      <div class="certificate-carousel-container">
+        <div class="certificate-row row-1">
+          <div class="cert-card">
+            <img
+              src="./assets/certificates/CLP.png"
+              alt="Advance programming in C"
+            />
+            <p>CLP: Advance Programming in C</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/CCNA.png" alt="CCNA" />
+            <p>Cisco: CCNAv7</p>
+          </div>
+          <div class="cert-card">
+            <img
+              src="./assets/certificates/NetworkEngineering.png"
+              alt="Network Engineering"
+            />
+            <p>Network Engineering</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/PCPA.png" alt="PCPA" />
+            <p>PCAP: Programming Essentials in Python</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/CiscoIT.png" alt="IT Essentials" />
+            <p>Cisco: IT Essentials</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/GDSC.png" alt="GDSC KIIT Chapter" />
+            <p>GDSC: Developer Student Club</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/Ec.png" alt="Ec Council" />
+            <p>Ec-Council: Selenium</p>
+          </div>
+        </div>
+        <div class="certificate-row row-2">
+          <div class="cert-card">
+            <img
+              src="./assets/certificates/Entrepreneurship1.png"
+              alt="Entrepreneurship"
+            />
+            <p>Entrepreneurship by ILLINOIS</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/Vertex.png" alt="Vertax AI" />
+            <p>Google Cloud: Prompt Design</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/UiPath.png" alt="Ui Path" />
+            <p>UI path: UI Design with studio</p>
+          </div>
+          <div class="cert-card">
+            <img
+              src="./assets/certificates/Entrepreneurship2.png"
+              alt="Entrepreneurship"
+            />
+            <p>Entrepreneurship by ILLINOIS</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/AWS.png" alt="AWS Cloud" />
+            <p>AWS Academy: Cloud Semester</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/Udemy.png" alt="Udemy" />
+            <p>Udemy: Full stack Web Dev</p>
+          </div>
+          <div class="cert-card">
+            <img src="./assets/certificates/linkedin.png" alt="LinkedIn" />
+            <p>LinkedIn: Thread LandScape</p>
+          </div>
+        </div>
+      </div>
+      <a
+        href="https://www.linkedin.com/in/b-tarun-kumar-3b1b20250/details/certifications/"
+        target="_blank"
+        class="view-all-btn"
+        >View All</a
+      >
+    </section>
+    <section id="contactme">
+      <div class="floating-icons">
+        <i class="fa-solid fa-code"></i>
+        <i class="fa-solid fa-terminal"></i>
+        <i class="fa-solid fa-gear"></i>
+        <i class="fa-solid fa-microchip"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-react"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-python"></i>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-solid fa-memory"></i>
+        <i class="fa-brands fa-android"></i>
+        <i class="fa-solid fa-mobile"></i>
+        <i class="fa-solid fa-laptop"></i>
+        <i class="fa-brands fa-python"></i>
+      </div>
+
+      <h2 class="contact-heading">-- Connect With Me</h2>
+
+      <form class="contact-form">
+        <div class="input-row">
+          <input type="text" name="name" placeholder="First Name" required />
+          <input type="text" name="name" placeholder="Last Name" required />
+        </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your Email ID"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Write your message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit" onclick="sendMail(event)">SUBMIT</button>
+      </form>
+    </section>
+
+    <footer>
+      Copyright @2025; Designed by
+      <p>B Tarun Kumar</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
